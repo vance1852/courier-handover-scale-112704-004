@@ -1,0 +1,23 @@
+{
+  "scale": {
+    "modes": {
+      "fine": {
+        "step_g": 2,
+        "min_g": 100,
+        "max_g": 12000
+      },
+      "coarse": {
+        "step_g": 10,
+        "min_g": 300,
+        "max_g": 41000
+      }
+    },
+    "stable_ms": 800
+  },
+  "tags": {
+    "kind": "reader"
+  },
+  "desk": {
+    "kind": "dispatch"
+  }
+}

@@ -1,0 +1,16 @@
+{"seq": 1, "device": "desk", "kind": "open", "at": 0, "load": "L1", "task": "T1"}
+{"seq": 2, "device": "tags", "kind": "tag", "at": 1, "load": "L1", "tree": {"C1": ["B1", "ice"]}, "condition": {"C1": "dry", "B1": "dry", "ice": "dry"}}
+{"seq": 3, "device": "scale", "kind": "boot", "at": 2, "boot": "S0", "mode": "fine"}
+{"seq": 4, "device": "scale", "kind": "tare", "at": 3, "boot": "S0", "zero_id": "Z1", "base_g": 1300, "stage": "received"}
+{"seq": 5, "device": "scale", "kind": "observe", "at": 5, "through": 905, "boot": "S0", "mode": "fine", "shown_g": 4532, "net": false, "side_touch": false, "load": "L1"}
+{"seq": 6, "device": "scale", "kind": "tare", "at": 910, "boot": "S0", "zero_id": "Z1", "base_g": 1300, "stage": "effective"}
+{"seq": 7, "device": "scale", "kind": "observe", "at": 1000, "through": 1900, "boot": "S0", "mode": "fine", "shown_g": 3232, "net": true, "zero_id": "Z1", "side_touch": false, "load": "L1"}
+{"seq": 8, "device": "desk", "kind": "transfer", "at": 2050, "load": "L1", "task": "T1", "removed": ["food-A"]}
+{"seq": 9, "device": "scale", "kind": "observe", "at": 2100, "through": 3000, "boot": "S0", "mode": "fine", "shown_g": 2004, "net": true, "zero_id": "Z1", "side_touch": false, "load": "L1"}
+{"seq": 10, "device": "desk", "kind": "bill", "at": 3100, "load": "L1", "task": "T1", "net_g": 1230, "refs": [7, 9]}
+{"seq": 11, "device": "desk", "kind": "open", "at": 3120, "load": "L1", "task": "T2"}
+{"seq": 12, "device": "scale", "kind": "boot", "at": 3200, "boot": "S1", "mode": "coarse"}
+{"seq": 13, "device": "tags", "kind": "tag", "at": 3205, "load": "L1", "tree": {"C1": ["B2", "ice"]}, "condition": {"C1": "wet", "B2": "dry", "ice": "dry"}}
+{"seq": 14, "device": "scale", "kind": "observe", "at": 3210, "through": 4110, "boot": "S1", "mode": "coarse", "shown_g": 3350, "net": false, "zero_id": "Z1", "side_touch": true, "load": "L1"}
+{"seq": 15, "device": "scale", "kind": "observe", "at": 4200, "through": 5100, "boot": "S1", "mode": "coarse", "shown_g": 3370, "net": false, "side_touch": false, "load": "L1"}
+{"seq": 16, "device": "desk", "kind": "validate_remaining", "at": 5300, "load": "L1", "task": "T2", "refs": [9, 13, 15]}
